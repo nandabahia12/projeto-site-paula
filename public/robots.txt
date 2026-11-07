@@ -1,14 +1,3 @@
-User-agent: Googlebot
-Allow: /
-
-User-agent: Bingbot
-Allow: /
-
-User-agent: Twitterbot
-Allow: /
-
-User-agent: facebookexternalhit
-Allow: /
-
+# Site em preparação: liberar indexação somente após revisão profissional e jurídica.
 User-agent: *
-Allow: /
+Disallow: /
