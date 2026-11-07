@@ -1,24 +1,33 @@
-# Projeto Site Paula
+# Site profissional — Dra. Fernanda Bahia
 
-oi
+Site editorial e institucional inicial para médica de família e comunidade, com interface em português, identidade em tons terrosos, rotas independentes, acessibilidade básica e páginas legais preliminares.
 
-This project was built with [Lovable](https://lovable.dev).
+## Stack
 
-## Build with Lovable
+React 19, TypeScript, Tailwind CSS 4, Vite e TanStack Start. Mantido o pacote `@lovable.dev/vite-tanstack-config` para continuidade da sincronização com o Lovable.
 
-Continue developing this project in the [Lovable editor](https://lovable.dev/projects/75a5164b-d12f-4203-8501-d917082417db).
+## Desenvolvimento
 
-- **Ship faster**: describe what you want to build and Lovable handles the code.
-- **Stay in sync**: every change made in Lovable is committed straight to this repository.
-- **Full ownership**: this code is yours. Push to `main` on GitHub and your changes sync back into Lovable, ready for your next prompt.
-
-## Development
-
-Prefer working locally? You need Node.js and npm — [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating).
-
-```sh
-git clone <this-repository-url>
-cd <repository-name>
-npm i
+```bash
+npm install
 npm run dev
+npm run build
 ```
+
+O código está no repositório `nandabahia12/projeto-site-paula`, reaproveitado para Fernanda conforme orientação do proprietário. Branch principal: `main`.
+
+## Páginas
+
+`/`, `/sobre`, `/acompanhamento`, `/teleconsulta`, `/contato`, `/privacidade`, `/termos`, `/cookies`, `/cancelamentos` e `/obrigado`. A raiz oferece página 404 personalizada.
+
+## Importante — não publicar como pronto
+
+- RQE numérico, contatos profissionais, domínio, endereço, agenda, pagamentos, plataforma clínica e condições de prestação do serviço precisam de confirmação.
+- O formulário não foi habilitado para evitar envio ou coleta fictícios; a página de contato encaminha ao perfil Instagram público sem solicitar informações de saúde.
+- Analytics, pixels publicitários e integrações médicas não estão instalados.
+- Políticas legais são rascunhos que exigem revisão especializada.
+- `robots.txt` bloqueia indexação. `sitemap.xml` está vazio até existir domínio real.
+- A arte OG está em SVG como fonte visual; faltam imagem raster final e URL absoluta por página para compartilhamento universal.
+- Esta sessão não executou instalação limpa/build e isso é obrigatório antes do deploy.
+
+Veja [o checklist de publicação](docs/publication-checklist.md).
