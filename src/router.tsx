@@ -9,6 +9,7 @@ export const getRouter = () => {
     routeTree,
     context: { queryClient },
     scrollRestoration: true,
+    defaultPendingComponent: () => <div role="status" aria-live="polite" className="loading-state"><span className="loading-spinner" aria-hidden="true" /> Carregando conteúdo...</div>,
     defaultPreloadStaleTime: 0,
   });
 
