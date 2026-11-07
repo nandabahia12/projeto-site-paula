@@ -1,23 +1,11 @@
-import { createFileRoute } from "@tanstack/react-router";
-
-// The home route ships no og:image, so serve-time hosting can inject the
-// project's social preview (explicit og:image or latest screenshot).
-export const Route = createFileRoute("/")({
-  component: Index,
-});
-
-// IMPORTANT: Replace this placeholder. See ./README.md for routing conventions.
-function Index() {
-  return (
-    <div
-      className="flex min-h-screen items-center justify-center"
-      style={{ backgroundColor: "#fcfbf8" }}
-    >
-      <img
-        data-lovable-blank-page-placeholder="REMOVE_THIS"
-        src="https://cdn.gpteng.co/blank-app-v1.svg"
-        alt="Your app will live here!"
-      />
-    </div>
-  );
-}
+import { createFileRoute, Link } from "@tanstack/react-router";
+import { ArrowUpRight, Heart, Leaf, BookOpenCheck, ShieldCheck, Compass, Sparkles } from "lucide-react";
+import { SiteShell, Seo, Eyebrow, InfoCard, ActionBand, ClinicalNote, ValuesNote } from "../components/SiteShell";
+export const Route=createFileRoute("/")({head:()=>Seo({title:"Ciência, escuta e cuidado ao longo da vida",description:"Dra. Fernanda Bahia, CRM-BA 40663. Medicina de Família e Comunidade com cuidado centrado na pessoa, prevenção e acompanhamento individualizado."}),component:Home});
+function Home(){return <SiteShell>
+<section className="hero"><div className="container hero-inner"><div className="hero-content"><Eyebrow>Medicina de Família e Comunidade · Salvador, BA</Eyebrow><h1>Ciência, escuta e <em>cuidado</em> ao longo da vida.</h1><p className="lead">Uma medicina que considera sua história, seus valores e tudo o que influencia sua saúde. Cuidado integral, individualizado e construído com você.</p><div className="hero-actions"><Link to="/acompanhamento" className="button">Conheça o acompanhamento <ArrowUpRight size={17}/></Link><Link to="/sobre" className="quiet-link">Conheça a Dra. Fernanda <ArrowUpRight size={15}/></Link></div></div><div className="hero-art" role="img" aria-label="Composição abstrata em tons terrosos, símbolo visual de cuidado e acolhimento"><div className="art-circle"><span className="art-script">fb.</span></div><div className="art-leaf" aria-hidden="true">❧</div><div className="art-caption">Para além dos diagnósticos, existem pessoas.</div></div></div><div className="container hero-bottom"><span><Heart size={15}/> Cuidado centrado na pessoa</span><span><BookOpenCheck size={15}/> Medicina Baseada em Evidências</span><span><Leaf size={15}/> Prevenção e estilo de vida</span></div></section>
+<section className="section"><div className="container"><div className="section-heading"><Eyebrow>Um outro olhar para a saúde</Eyebrow><h2>Você é muito mais do que um diagnóstico.</h2><p className="lead">Sua saúde é atravessada por sua história, seus vínculos, seu ambiente e suas possibilidades. Uma boa decisão clínica começa por compreender esse conjunto.</p></div><div className="features-grid"><InfoCard number="01" title="Escuta que acolhe">Tempo e atenção para compreender suas necessidades, preocupações e expectativas, sem julgamentos.</InfoCard><InfoCard number="02" title="Ciência com humanidade">As melhores evidências científicas disponíveis, integradas ao contexto e às preferências de cada pessoa.</InfoCard><InfoCard number="03" title="Cuidado que continua">Prevenção, decisões compartilhadas e coordenação do cuidado conforme cada necessidade clínica.</InfoCard></div></div></section>
+<section className="section soft"><div className="container split"><div className="quote-panel"><blockquote>“Nenhuma pessoa cabe no diagnóstico que recebe.”</blockquote><small>Dra. Fernanda Bahia · Texto autoral</small></div><div className="body-text"><Eyebrow>Quem cuida de você</Eyebrow><h2>Uma trajetória construída com ciência e compromisso social.</h2><p>Fernanda Bahia é médica, com residência em Medicina de Família e Comunidade pela Escola de Saúde Pública da Bahia. Sua atuação no SUS, na Atenção Primária e na preceptoria sustenta um olhar comprometido com a integralidade, a dignidade e a equidade.</p><p>Seu cuidado considera fatores biológicos, emocionais, familiares e sociais, reconhecendo que cada pessoa vive circunstâncias singulares.</p><ValuesNote/><p><Link to="/sobre" className="quiet-link">Conheça sua história <ArrowUpRight size={15}/></Link></p></div></div></section>
+<section className="section"><div className="container"><div className="section-heading"><Eyebrow>Como pensamos o cuidado</Eyebrow><h2>O acompanhamento nasce das suas necessidades.</h2><p className="lead">A proposta é construir um plano individual de cuidados e revisá-lo ao longo do tempo, conforme indicação clínica. O formato comercial e a periodicidade ainda estão em definição.</p></div><div className="features-grid"><InfoCard number="01" title="Compreender"><Compass size={25} aria-hidden="true"/> <span>Uma avaliação que considera sua história, prioridades e contexto de vida.</span></InfoCard><InfoCard number="02" title="Construir"><Sparkles size={25} aria-hidden="true"/> <span>Objetivos realistas e decisões compartilhadas, com atenção à prevenção e ao estilo de vida.</span></InfoCard><InfoCard number="03" title="Reavaliar"><ShieldCheck size={25} aria-hidden="true"/> <span>Acompanhamento e ajustes clinicamente indicados, respeitando sua autonomia.</span></InfoCard></div><div style={{marginTop:30}}><Link to="/acompanhamento" className="quiet-link">Entenda nossa proposta <ArrowUpRight size={15}/></Link></div></div></section>
+<section className="section soft"><div className="container split"><div className="body-text"><Eyebrow>Cuidado com respeito</Eyebrow><h2>Um espaço onde sua história importa.</h2><p>Respeito à diversidade, equidade, dignidade humana e autonomia são valores que orientam a prática profissional. O compromisso é oferecer um atendimento cuidadoso, acolhedor e sem discriminação.</p><p>Os interesses da médica incluem saúde mental, neurodivergências e saúde LGBTQIAPN+, dentro das competências e responsabilidades de sua atuação profissional.</p><Link to="/sobre" className="quiet-link">Conheça os valores e a trajetória <ArrowUpRight size={15}/></Link></div><div className="quote-panel"><blockquote>O cuidado acontece no encontro entre conhecimento científico e a vida real de cada pessoa.</blockquote></div></div></section>
+<section className="container"><ClinicalNote/></section><ActionBand/></SiteShell>}
