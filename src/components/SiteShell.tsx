@@ -11,7 +11,7 @@ const navigation = [
 ] as const;
 export const professional = { name: "Dra. Fernanda Bahia", crm: "CRM-BA 40663", city: "Salvador, Bahia", instagram: "https://www.instagram.com/nandabahia12/" };
 export function Seo({ title, description }: { title: string; description: string }) {
-  return { meta: [{ title: title + " | Dra. Fernanda Bahia" }, { name: "description", content: description }, { property: "og:title", content: title + " | Dra. Fernanda Bahia" }, { property: "og:description", content: description }, { property: "og:type", content: "website" }, { name: "twitter:card", content: "summary_large_image" }] };
+  return { meta: [{ title: title + " | Dra. Fernanda Bahia" }, { name: "description", content: description }, { property: "og:title", content: title + " | Dra. Fernanda Bahia" }, { property: "og:description", content: description }, { property: "og:type", content: "website" }, { property: "og:image", content: "/og-cover.svg" }, { property: "og:image:alt", content: "Dra. Fernanda Bahia — Ciência, escuta e cuidado ao longo da vida" }, { name: "twitter:card", content: "summary_large_image" }] };
 }
 function ConsentBanner() {
   const [choice, setChoice] = useState<"unset"|"essential"|"all">("unset");
