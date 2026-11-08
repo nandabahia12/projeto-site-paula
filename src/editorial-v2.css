@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,400;9..144,500&display=swap');
+
+/* Fernanda Bahia — V2 editorial. Added as a separate, reversible stylesheet. */
+.ed-site{--ed-paper:#faf8f2;--ed-cream:#f3efe5;--ed-forest:#253f34;--ed-rust:#8b4e3a;--ed-deep:#212e29;--ed-line:#d9d5c8;--ed-sand:#e7dfd0;background:var(--ed-paper);color:var(--ed-deep);font:400 16px/1.65 "DM Sans",Arial,sans-serif}
+.ed-site *{box-sizing:border-box}
+.ed-site section[id]{scroll-margin-top:110px}
+.ed-site h1,.ed-site h2,.ed-site h3,.ed-site blockquote{font-family:"Fraunces",Georgia,serif;font-weight:400;letter-spacing:-.035em}
+.ed-site h1{font-size:clamp(3.1rem,5.3vw,5.7rem);line-height:1.09}
+.ed-site h2{font-size:clamp(2.1rem,3.6vw,4.05rem);line-height:1.17;margin:0 0 30px}
+.ed-site h3{font-size:clamp(1.4rem,2vw,2rem);line-height:1.28;margin:0 0 17px}
+.ed-site h2 em,.ed-site h3 em{color:var(--ed-rust)}
+.ed-site p{max-width:65ch;font-size:1rem;line-height:1.8;margin:0 0 22px}
+.ed-site .ed-lead{font-size:1.12rem;line-height:1.79}
+.ed-site a:focus-visible,.ed-site button:focus-visible,.ed-site summary:focus-visible{outline:3px solid #b35b40;outline-offset:5px}
+.ed-site a,.ed-site button{touch-action:manipulation}
+.ed-wrap{width:min(1100px,calc(100% - 100px));margin-inline:auto}
+.ed-space{padding:clamp(100px,10vw,170px) 0}
+.ed-eyebrow{display:inline-block;text-transform:uppercase;letter-spacing:.155em;font-size:.7rem;line-height:1.6;font-weight:700;color:var(--ed-rust)}
+.ed-line{display:inline-block;width:30px;height:1px;background:var(--ed-rust);vertical-align:middle;margin-right:12px}
+.ed-subnote,.ed-site p.ed-subnote{font-size:.79rem;color:#62685f;line-height:1.7}
+.ed-link{display:inline-flex;align-items:center;gap:12px;color:var(--ed-forest);font-weight:700;font-size:.89rem;line-height:1.4;border-bottom:1px solid currentColor;padding:5px 0 7px;transition:gap .2s}
+.ed-link:hover{gap:17px}
+.ed-action-primary,.ed-action-outline{display:inline-flex;align-items:center;justify-content:space-between;gap:20px;border:1px solid var(--ed-forest);border-radius:999px;padding:15px 24px;min-height:54px;font-size:.85rem;font-weight:700;line-height:1.4;transition:transform .2s,background-color .2s}
+.ed-action-primary{color:#fff;background:var(--ed-forest)}.ed-action-primary:hover{background:#355b48;transform:translateY(-2px)}
+.ed-action-outline{color:var(--ed-forest);background:transparent}.ed-action-outline:hover{background:#eee8dd;transform:translateY(-2px)}
+.ed-inline-actions{display:flex;flex-wrap:wrap;align-items:center;gap:22px;margin-top:34px}
+.ed-opening{padding:86px 0 0;background:radial-gradient(ellipse at 80% 2%,#f0e7d8 0%,transparent 50%),var(--ed-paper)}
+.ed-opening-grid{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:clamp(45px,6vw,90px);align-items:center}
+.ed-opening-copy{padding:26px 0 42px}
+.ed-opening h1{margin:31px 0 8px;color:var(--ed-forest);font-size:clamp(3.15rem,5.2vw,5.65rem)}
+.ed-opening-thesis{font:400 clamp(2rem,3.1vw,3.5rem)/1.24 "Fraunces",Georgia,serif!important;letter-spacing:-.03em;color:var(--ed-rust);max-width:19ch!important;margin:18px 0 38px!important}
+.ed-opening-thesis em{font-weight:400}
+.ed-opening-description{max-width:520px;border-left:1px solid #aab1a3;padding-left:25px}
+.ed-opening-description p{font-size:.98rem;max-width:55ch;color:#485248;margin-bottom:15px}
+.ed-opening-composition{position:relative;min-height:545px;overflow:hidden;isolation:isolate;border-radius:45% 45% 3px 3px;background:linear-gradient(135deg,#c7a58a,#9b7359 54%,#745345);box-shadow:23px 23px 0 #e8ddcf}
+.ed-opening-shape{position:absolute;background:#344e3a8c;border-radius:80% 5% 80% 5%}
+.ed-opening-shape-one{width:72%;height:90%;top:-34%;left:-25%;transform:rotate(-32deg)}
+.ed-opening-shape-two{width:70%;height:77%;right:-31%;bottom:-33%;transform:rotate(26deg);background:#253f349c}
+.ed-opening-graphic{position:absolute;top:28%;left:0;right:0;text-align:center;font:italic 8.7rem/1 "Fraunces",Georgia,serif;color:#f5e9d49f;letter-spacing:-.08em;transform:rotate(-12deg)}
+.ed-opening-graphic span{color:#f5eada}
+.ed-image-caption{position:absolute;left:33px;right:25px;bottom:32px;display:flex;flex-direction:column;gap:12px;color:#fff9ed}
+.ed-image-caption>span{font:italic clamp(1.5rem,2vw,2.35rem)/1.31 "Fraunces",Georgia,serif}
+.ed-image-caption small{font-size:.69rem;letter-spacing:.11em;text-transform:uppercase}
+.ed-opening-bottom{display:flex;justify-content:space-between;align-items:center;gap:18px;margin-top:65px;border-top:1px solid var(--ed-line);padding:22px 0;color:#5b645b;font-size:.75rem;letter-spacing:.07em}
+.ed-opening-bottom a{display:inline-flex;gap:11px;align-items:center;letter-spacing:0;font-weight:700;font-size:.82rem}
+.ed-chapter-rail{display:flex;flex-direction:column;gap:1px;position:fixed;top:50%;left:8px;transform:translateY(-50%);z-index:30}
+.ed-chapter-rail a{display:flex;align-items:center;gap:9px;padding:8px 7px;background:#faf8f2ed;color:#4d594f;font-size:.67rem;min-height:38px;border-radius:4px;opacity:.6;transition:opacity .15s}
+.ed-chapter-rail a:hover,.ed-chapter-rail a.current{opacity:1}
+.ed-rail-number{color:var(--ed-rust);padding-left:7px;border-left:2px solid transparent}
+.ed-chapter-rail .current .ed-rail-number{border-color:var(--ed-rust)}
+.ed-mobile-index{display:none}
+.ed-recognition{background:#f0ebdf}
+.ed-heading-row{display:grid;grid-template-columns:1fr .65fr;gap:9%;align-items:end;margin-bottom:55px}
+.ed-heading-row h2{margin:24px 0 0;max-width:630px}
+.ed-heading-row>p{max-width:34ch;margin-bottom:5px;color:#566054}
+.ed-story-explorer{display:grid;grid-template-columns:1fr 1fr;border-block:1px solid #cbc8b9}
+.ed-story-choices{display:flex;flex-direction:column;border-right:1px solid #cbc8b9}
+.ed-story-choices button{display:grid;grid-template-columns:24px 1fr 20px;gap:17px;align-items:start;width:100%;background:transparent;border:0;border-bottom:1px solid #d7d1c5;text-align:left;color:#475148;padding:22px 20px 22px 0;min-height:92px}
+.ed-story-choices button:last-child{border-bottom:0}
+.ed-story-choices button.is-selected{color:var(--ed-rust)}
+.ed-story-count{padding-top:3px;color:#936b56;font-size:.75rem}
+.ed-story-choice-content{display:flex;flex-direction:column;gap:8px}
+.ed-story-choice-content strong{font-size:.91rem}
+.ed-story-choice-content>span{font:400 1.09rem/1.47 "Fraunces",Georgia,serif}
+.ed-story-detail{min-height:422px;background:#e9dfcf;padding:clamp(28px,4vw,70px);display:flex;flex-direction:column;justify-content:center}
+.ed-story-detail h3{font-size:clamp(1.8rem,2.75vw,2.8rem);color:var(--ed-forest);margin:19px 0}
+.ed-story-detail p{color:#455348;max-width:44ch}
+.ed-story-detail .ed-story-footnote{font-size:.86rem;margin:0 0 30px;color:#5d655b}
+.ed-story-detail .ed-link{align-self:flex-start}
+.ed-site p.ed-citation-note{color:#64685f;font-size:.77rem;margin:18px 0 0}
+.ed-mfc{background:#faf8f2}
+.ed-mfc-layout{display:grid;grid-template-columns:.67fr 1.33fr;gap:clamp(60px,9vw,125px)}
+.ed-mfc-side{display:flex;flex-direction:column;align-items:flex-start;gap:50px}
+.ed-mfc-symbol{width:175px;height:175px;border:1px solid #b8bbac;border-radius:50%;display:grid;place-items:center;position:relative;margin-top:45px}
+.ed-mfc-symbol:after{content:"";position:absolute;width:65%;height:65%;border:1px solid #c4b6a5;border-radius:37% 63% 47% 53%;transform:rotate(23deg)}
+.ed-mfc-symbol span{font:italic 5.5rem "Fraunces",Georgia,serif;color:var(--ed-rust)}
+.ed-side-note{font:italic 1.15rem/1.5 "Fraunces",Georgia,serif;color:#756e61}
+.ed-mfc-body h2{margin:22px 0 30px}
+.ed-mfc-body>.ed-lead{color:#4b554c;margin-bottom:45px}
+.ed-mfc-notes{border-top:1px solid var(--ed-line);margin-bottom:33px}
+.ed-mfc-notes>div{display:grid;grid-template-columns:45px 1fr;gap:12px;padding:25px 0;border-bottom:1px solid var(--ed-line)}
+.ed-mfc-notes>div>span{font:italic 1.1rem "Fraunces",Georgia,serif;color:var(--ed-rust)}
+.ed-mfc-notes h3{font-size:1.4rem;margin:0 0 9px}
+.ed-mfc-notes p{font-size:.92rem;color:#576158;margin:0}
+.ed-fernanda{background:#eae9dd}
+.ed-fernanda-layout{display:grid;grid-template-columns:.89fr 1.11fr;align-items:center;gap:clamp(60px,9vw,130px)}
+.ed-fernanda-still{position:relative;min-height:500px;padding:42px;display:flex;flex-direction:column;justify-content:space-between;overflow:hidden;background:radial-gradient(ellipse at 80% 17%,#ebc6a1 0,transparent 42%),linear-gradient(146deg,#8b795f,#b5a17f 55%,#66735a);border-radius:4px}
+.ed-fernanda-still:before{content:"";position:absolute;width:80%;height:100%;right:-30%;top:-30%;border-radius:0 0 90% 5%;transform:rotate(-24deg);background:#2c533e8c}
+.ed-still-word{font:400 clamp(2.5rem,4vw,4.3rem)/1.15 "Fraunces",Georgia,serif;z-index:1;color:#fff9ed;letter-spacing:-.025em}
+.ed-still-word i{color:#f4d0b4}
+.ed-fernanda-still small{font-size:.7rem;text-transform:uppercase;letter-spacing:.13em;color:white;z-index:1}
+.ed-fernanda-copy p{color:#4d5b50;max-width:53ch}
+.ed-fernanda-copy h2{margin-top:22px}
+.ed-fernanda-copy .ed-subnote{margin-top:24px}
+.ed-care{background:#f9f6ee}
+.ed-care-intro{max-width:860px}
+.ed-care-intro h2{margin:24px 0 24px}
+.ed-care-intro>p{max-width:61ch;color:#596054}
+.ed-care-sequence{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:34px;margin-top:66px}
+.ed-care-sequence article{border-top:1px solid #c6c5b6;padding-top:25px}
+.ed-care-sequence article>span{color:var(--ed-rust);font-size:.75rem;font-weight:700;letter-spacing:.08em}
+.ed-care-sequence h3{margin:26px 0 15px;font-size:clamp(1.55rem,2.2vw,2.25rem)}
+.ed-care-sequence p{color:#586055;font-size:.94rem}
+.ed-evidence{background:#dee2d7}
+.ed-evidence-layout{display:grid;grid-template-columns:1fr 1fr;gap:90px}
+.ed-evidence h2{margin-top:25px}
+.ed-evidence-layout>div:nth-child(2)>p{color:#435248}
+.ed-evidence-links{border-top:1px solid #b7c0b1;margin:36px 0 28px}
+.ed-evidence-links span{display:flex;gap:15px;align-items:center;border-bottom:1px solid #b7c0b1;padding:17px 0;font-size:.9rem}
+.ed-evidence-links svg{color:var(--ed-rust);flex-shrink:0}
+.ed-faq{background:#f8f3e9}
+.ed-faq-layout{display:grid;grid-template-columns:.84fr 1.16fr;gap:90px}
+.ed-faq-layout>div:first-child>p{max-width:37ch;color:#596458}
+.ed-faq h2{margin-top:20px}
+.ed-faq-list{border-top:1px solid #cac7bb}
+.ed-faq-list details{border-bottom:1px solid #cac7bb}
+.ed-faq-list summary{display:grid;grid-template-columns:25px 1fr 24px;gap:18px;align-items:center;cursor:pointer;padding:23px 0;list-style:none;font-weight:600;font-size:.98rem}
+.ed-faq-list summary::-webkit-details-marker{display:none}
+.ed-faq-list details[open] summary svg{transform:rotate(180deg)}
+.ed-faq-list .ed-faq-number{font-size:.7rem;color:var(--ed-rust)}
+.ed-faq-list details>p{margin:0 0 25px 43px;color:#566156;font-size:.91rem;max-width:50ch}
+.ed-contact{background:#243f33;color:#fff9ef;padding:clamp(85px,9vw,140px) 0}
+.ed-contact-layout{display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:85px}
+.ed-contact .ed-eyebrow{color:#edbca4}
+.ed-contact h2{font-size:clamp(3.3rem,6vw,6rem);margin:24px 0}
+.ed-contact h2 em{color:#eac6a6}
+.ed-contact p{color:#f2eee2;font-size:1.1rem;max-width:49ch}
+.ed-action-inverse{background:#efd8c1;color:#20382d;border-color:#efd8c1;margin:12px 0 17px}
+.ed-action-inverse:hover{background:#fff0dc}
+.ed-contact small{display:block;color:#e5ded0;font-size:.81rem;max-width:52ch;line-height:1.6}
+.ed-clinical{padding:22px 0 35px}
+.ed-about-opening{padding:100px 0 120px;background:#f3efe5}
+.ed-about-opening-layout{display:grid;grid-template-columns:1.1fr .9fr;align-items:center;gap:80px}
+.ed-about-opening h1{margin:24px 0 35px;color:var(--ed-forest)}
+.ed-about-opening h1 em{color:var(--ed-rust);font-weight:400}
+.ed-about-opening p{max-width:52ch;color:#4b5b4e}
+.ed-about-cover-art{position:relative;min-height:430px;background:linear-gradient(140deg,#b4a385,#b77f61 57%,#6e7763);border-radius:48% 48% 4px 4px;padding:34px;display:flex;flex-direction:column;justify-content:space-between;overflow:hidden}
+.ed-about-cover-art:before{content:"";position:absolute;width:85%;height:90%;right:-30%;top:-20%;transform:rotate(-30deg);background:#2d57429c;border-radius:10% 90% 4% 86%}
+.ed-about-cover-art>span{z-index:1;font:400 clamp(2.3rem,4vw,4.4rem)/1.15 "Fraunces",Georgia,serif;color:white}
+.ed-about-cover-art>span i{color:#f8d9bb}
+.ed-about-cover-art>small{z-index:1;color:white;font-size:.74rem;text-transform:uppercase;letter-spacing:.1em}
+.ed-about-body-grid{display:grid;grid-template-columns:210px minmax(0,1fr);gap:clamp(50px,6vw,95px);align-items:start}
+.ed-about-index{position:sticky;top:112px;padding:38px 0;display:flex;flex-direction:column;gap:8px}
+.ed-about-index a{display:flex;align-items:center;gap:13px;padding:9px 0;font-size:.76rem;color:#566056}
+.ed-about-index a:hover,.ed-about-index a[aria-current="location"]{color:var(--ed-rust);font-weight:700}
+.ed-about-index a span{color:var(--ed-rust);font-size:.69rem}
+.ed-about-chapter{padding:110px 0;border-bottom:1px solid var(--ed-line)}
+.ed-about-chapter.ed-about-first{padding-top:120px}
+.ed-about-chapter.ed-about-last{border-bottom:0}
+.ed-about-chapter h2{margin:24px 0 37px;max-width:760px}
+.ed-about-chapter>p{max-width:59ch;color:#4d584e}
+.ed-about-chapter blockquote{border-left:2px solid #a75f44;padding:16px 0 16px 31px;margin:54px 0;font-size:clamp(1.55rem,2.55vw,2.75rem);line-height:1.44;color:var(--ed-rust);max-width:690px}
+.ed-personal-more{border-top:1px solid var(--ed-line);border-bottom:1px solid var(--ed-line);max-width:650px;margin-top:55px}
+.ed-personal-more summary{list-style:none;display:flex;align-items:center;justify-content:space-between;gap:20px;padding:20px 0;cursor:pointer;font-size:.89rem;font-weight:700}
+.ed-personal-more summary::-webkit-details-marker{display:none}
+.ed-personal-more[open] summary svg{transform:rotate(180deg)}
+.ed-personal-more>div{padding:12px 0 25px}
+.ed-facts-line{display:flex;flex-wrap:wrap;gap:11px;margin:35px 0}
+.ed-facts-line span{border:1px solid #d2cabc;border-radius:50px;padding:10px 14px;color:#526256;font-size:.77rem}
+.ed-life-layout{display:grid;grid-template-columns:.8fr 1.2fr;gap:37px}
+.ed-life-layout>div:nth-child(2) p{font-size:.94rem}
+.ed-life-art{min-height:315px;background:#dee0cc;padding:30px;display:flex;flex-direction:column;justify-content:space-between;color:#395746}
+.ed-life-art span{font:italic 1.9rem/1.25 "Fraunces",Georgia,serif}
+.ed-beliefs{border-top:1px solid var(--ed-line);margin:42px 0}
+.ed-beliefs>div{display:flex;gap:35px;align-items:center;border-bottom:1px solid var(--ed-line);padding:21px 0}
+.ed-beliefs span{font-size:.76rem;color:var(--ed-rust)}
+.ed-beliefs strong{font-size:1rem;font-weight:500}
+.ed-about-ending{margin-top:55px;display:flex;flex-direction:column;align-items:flex-start;gap:18px}
+.ed-about-ending>span{font:italic 1.8rem "Fraunces",Georgia,serif;color:var(--ed-rust);margin-bottom:6px}
+@media(max-width:1450px){.ed-chapter-rail{display:none}}
+@media(max-width:1000px){.ed-wrap{width:min(100% - 64px,900px)}.ed-opening-grid,.ed-fernanda-layout,.ed-mfc-layout,.ed-evidence-layout,.ed-faq-layout,.ed-about-opening-layout{gap:50px}.ed-about-body-grid{grid-template-columns:175px 1fr;gap:35px}.ed-care-sequence{gap:19px}}
+@media(max-width:800px){.ed-wrap{width:calc(100% - 48px)}.ed-space{padding:90px 0}.ed-opening{padding-top:45px}.ed-opening-grid,.ed-heading-row,.ed-mfc-layout,.ed-fernanda-layout,.ed-evidence-layout,.ed-faq-layout,.ed-contact-layout,.ed-about-opening-layout{grid-template-columns:1fr;gap:38px}.ed-opening-copy{padding:0}.ed-opening-composition{min-height:390px;max-width:550px;width:100%;justify-self:center;border-radius:45% 45% 4px 4px}.ed-opening-graphic{font-size:7rem}.ed-opening-bottom{margin-top:52px}.ed-heading-row{gap:18px;margin-bottom:42px}.ed-heading-row>p{max-width:60ch}.ed-story-explorer{grid-template-columns:1fr}.ed-story-choices{border-right:0}.ed-story-choices button{min-height:78px}.ed-story-detail{min-height:320px}.ed-mfc-side{gap:18px}.ed-mfc-symbol,.ed-side-note{display:none}.ed-mfc-body h2{margin-top:0}.ed-fernanda-still{min-height:365px}.ed-care-sequence{grid-template-columns:1fr;gap:8px;margin-top:45px}.ed-care-sequence article{padding:22px 0 10px}.ed-care-sequence h3{margin:15px 0}.ed-about-opening{padding:66px 0 80px}.ed-about-cover-art{min-height:300px}.ed-about-body-grid{display:block}.ed-about-index{position:relative;top:auto;display:flex;overflow-x:auto;flex-direction:row;gap:23px;border-bottom:1px solid var(--ed-line);padding:18px 0;scrollbar-width:thin}.ed-about-index a{white-space:nowrap}.ed-about-chapter,.ed-about-chapter.ed-about-first{padding:85px 0}.ed-life-layout{grid-template-columns:1fr}.ed-life-art{min-height:220px}.ed-contact{padding:85px 0}}
+@media(max-width:520px){.ed-wrap{width:calc(100% - 38px)}.ed-space{padding:78px 0}.ed-site h2{font-size:clamp(2.05rem,8.4vw,2.8rem);line-height:1.19}.ed-site h3{font-size:1.45rem}.ed-site p{font-size:.96rem}.ed-site .ed-lead{font-size:1rem}.ed-eyebrow{font-size:.62rem;letter-spacing:.12em}.ed-opening{padding-top:34px}.ed-opening h1{font-size:clamp(2.8rem,11vw,4rem);margin:27px 0 15px}.ed-opening-thesis{font-size:clamp(1.85rem,8vw,2.8rem)!important;margin:16px 0 31px!important}.ed-opening-description{padding-left:18px}.ed-opening-composition{min-height:320px;box-shadow:12px 12px 0 #e8ddcf}.ed-opening-graphic{font-size:5.4rem}.ed-image-caption{left:20px;bottom:23px}.ed-image-caption>span{font-size:1.6rem}.ed-inline-actions{align-items:stretch;gap:22px}.ed-inline-actions .ed-action-primary{width:100%}.ed-opening-bottom{margin-top:35px;font-size:.64rem}.ed-opening-bottom a{font-size:.7rem}.ed-story-choices button{grid-template-columns:21px 1fr 18px;padding:17px 0;gap:11px}.ed-story-choice-content>span{font-size:1rem}.ed-story-detail{padding:27px 22px}.ed-story-detail h3{font-size:1.9rem}.ed-fernanda-still{min-height:290px;padding:30px}.ed-still-word{font-size:2.7rem}.ed-contact h2{font-size:3.25rem}.ed-contact .ed-action-primary{width:100%}.ed-faq-list summary{gap:11px;font-size:.9rem}.ed-faq-list details>p{margin-left:35px}.ed-about-opening h1{font-size:clamp(3rem,11vw,4rem)}.ed-about-cover-art{min-height:280px}.ed-about-chapter,.ed-about-chapter.ed-about-first{padding:72px 0}.ed-about-chapter blockquote{font-size:1.55rem;padding-left:19px}.ed-beliefs>div{gap:17px}.ed-beliefs strong{font-size:.91rem}}
+@media(prefers-reduced-motion:reduce){.ed-site *,.ed-site *:before,.ed-site *:after{scroll-behavior:auto!important;transition:none!important;animation:none!important}}
