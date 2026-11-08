@@ -1,6 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
-import { ArrowDown, ArrowRight, ArrowUpRight, BookOpen, ChevronDown, Compass, Heart, Leaf, MoveUpRight, ShieldCheck } from "lucide-react";
+import { ArrowDown, ArrowRight, ArrowUpRight, BookOpen, ChevronDown, Leaf, MoveUpRight, ShieldCheck } from "lucide-react";
 import { SiteShell, Seo, ClinicalNote } from "../components/SiteShell";
 
 export const Route = createFileRoute("/")({
